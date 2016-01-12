@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<plugin name="current_weather">
+	<title>Current weather</title>
+	<summary>Displays city weather on the front end</summary>
+	<author>Intelliants LLC</author>
+	<contributor>Intelliants LLC</contributor>
+	<version>3.2.1</version>
+	<date>2015-01-06</date>
+	<compatibility>3.2</compatibility>
+
+	<configgroup name="current_weather">Current Weather</configgroup>
+
+	<config group="current_weather" name="current_weather_divider" type="divider" description="Current weather">Settings</config>
+	<config group="current_weather" name="current_weather_city" type="text" description="City" length="255">London</config>
+	<config group="current_weather" name="current_weather_unit" values="Celsius,Fahrenheit" type="select" description="Temperature unit">Celsius</config>
+	<config group="current_weather" name="current_weather_scheme" values="light,dark" type="select" description="Color scheme">light</config>
+
+	<blocks>
+		<block name="current_weather" title="Weather" position="left" type="smarty" sticky="0" pages="index" filename="plugin:current_weather:block.weather.tpl" classname="box-clear"><![CDATA[]]></block>
+	</blocks>
+
+	<hooks>
+		<hook name="phpCoreBeforePageDisplay" page_type="front" filename="plugins/current_weather/includes/hook.weather.php"><![CDATA[]]></hook>
+	</hooks>
+</plugin>
