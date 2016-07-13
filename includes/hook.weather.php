@@ -9,7 +9,8 @@ if (iaView::REQUEST_HTML == $iaView->getRequestType() && $iaView->blockExists('c
 
 	$degrees = array('Celsius' => 'C', 'Fahrenheit' => 'F');
 	$degreesParam = $degrees[$iaCore->get('current_weather_unit')];
-	$weatherData = iaUtil::jsonDecode(file_get_contents("http://api.openweathermap.org/data/2.5/weather?q={$city}&mode=json&units={$unitParam}"));
+	$appID = $iaCore->get('current_weather_key');
+	$weatherData = iaUtil::jsonDecode(file_get_contents("http://api.openweathermap.org/data/2.5/weather?q={$city}&mode=json&units={$unitParam}&appid={$appID}"));
 	$weatherTemp = round($weatherData['main']['temp']);
 	if ($weatherData)
 	{
