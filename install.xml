@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<module type="plugin" name="weather">
+<module type="plugin" name="current_weather">
     <title>Current Weather</title>
     <summary>Displays city weather on the front end</summary>
     <author>Intelliants LLC</author>
