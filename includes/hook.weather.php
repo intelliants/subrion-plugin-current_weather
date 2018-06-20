@@ -40,7 +40,7 @@ if (iaView::REQUEST_HTML == $iaView->getRequestType() && $iaView->blockExists('c
     $weatherTemp = round($weatherData['main']['temp']);
 
     if ($weatherData) {
-        $images = array(
+        $images = [
             'Mist' => 'img/mist.png',
             'Snow' => 'img/snow.png',
             'Thunderstorm' => 'img/thunderstorm.png',
@@ -51,7 +51,8 @@ if (iaView::REQUEST_HTML == $iaView->getRequestType() && $iaView->blockExists('c
             'Scattered clouds' => 'img/clouds.png',
             'Few clouds' => 'img/cloudy_day.png',
             'Clear sky' => 'img/clear_sky.png',
-            'Clear' => 'img/clear_sky.png');
+            'Clear' => 'img/clear_sky.png'
+        ];
 
         $weatherIconUrl = 'http://openweathermap.org/img/w/' . $weatherData['weather'][0]['icon'];
 

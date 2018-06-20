@@ -1,4 +1,4 @@
-{if $weather_data}
+{if !empty($weather_data)}
     <div class="b-weather">
         <div class="b-weather__temp">
             <img src="{$icon}.png" alt="{$weather_data.weather[0]['main']}">

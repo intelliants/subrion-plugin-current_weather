@@ -4,8 +4,8 @@
     <summary>Displays city weather on the front end</summary>
     <author>Intelliants LLC</author>
     <contributor>Intelliants LLC</contributor>
-    <version>4.2.0</version>
-    <date>2018-03-13</date>
+    <version>4.2.1</version>
+    <date>2018-06-20</date>
     <compatibility>4.2</compatibility>
 
     <configgroup name="current_weather">Current Weather</configgroup>
